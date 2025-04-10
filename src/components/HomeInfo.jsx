@@ -6,11 +6,11 @@ const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
     return (
       <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
-        Hi, I'm
-        <span className='font-semibold mx-2 text-white'>Adrian</span>
+        Welcome to
+        <span className='font-semibold mx-2 text-white'>TECH:PLOT</span>
         👋
         <br />
-        A Software Engineer from Croatia 🇭🇷
+        We build tech teams and host amazing tech events! 
       </h1>
     );
 
@@ -18,10 +18,10 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium sm:text-xl text-center'>
-          Worked with many companies <br /> and picked up many skills along the way
+          Reach out to us <br /> at hello@techplot.se and we will <br /> help you recruit amazing talent
         </p>
 
-        <Link to='/about' className='neo-brutalism-white neo-btn'>
+        <Link to='https://www.linkedin.com/feed/' className='neo-brutalism-white neo-btn'>
           Learn more
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
@@ -33,11 +33,11 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
-          Led multiple projects to success over the years. <br /> Curious about the impact?
+          We make meaningful tech events <br /> Curious to join as a speaker or audience?
         </p>
 
-        <Link to='/projects' className='neo-brutalism-white neo-btn'>
-          Visit my portfolio
+        <Link to='https://confetti.events/en' className='neo-brutalism-white neo-btn'>
+          Tech:Plot Events
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
       </div>
@@ -48,13 +48,8 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
       <p className='font-medium sm:text-xl text-center'>
-        Need a project done or looking for a dev? <br/> I'm just a few keystrokes away
+        We provide direct IT recruitment <br/> as well as consultancy and full in-house solutions <br/> Reach out at hello@techplot.se
       </p>
-
-      <Link to='/contact' className='neo-brutalism-white neo-btn'>
-        Let's talk
-        <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
-      </Link>
     </div>
     );
   }
